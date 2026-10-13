@@ -1,11 +1,12 @@
 h1 {
-  color: blue;
+  color: #0077b6;
+  text-align: center;
 }
 p {
-  color: white;
-  background-color: plum;
+  color: #89023e;
+  background-color: #f3d5b5;
   padding: 15px;
-  border: 10px solid powderblue;
+  border: 10px solid #ea638c;
   /* margin: 50px; */
   /* margin-top: 40px;
    margin-right: 10px;
@@ -16,9 +17,11 @@ p {
   text-align: center;
 }
 body {
-  border: 5px dotted pink;
+  border: 5px dotted #7b2cbf;
 }
 /* 
 a{
   cursor: pointer;
 } */
+ 
+/* la pagina que usamos para estas paletas de colores se llama coolors, copiamos los codigos hexadecimales y colocamos el #antes de pegarlo */
