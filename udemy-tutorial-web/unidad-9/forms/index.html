@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios en HTML</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <h1>Formularios en HTML</h1>
+    <form>
+      <label for="nombre">Nombre:</label> <br />
+      <input
+        type="text"
+        id="nombre"
+        name="nombre"
+        placeholder="Escribe tu nombre"
+        required="true"
+      />
+      <br />
+
+      <label for="apellido">Apellido:</label> <br />
+      <input
+        type="text"
+        id="apellido"
+        name="apellido"
+        placeholder="Escribe tu apellido"
+        required="true"
+      />
+      <br />
+
+      <label for="email"> Email: </label> <br />
+      <input type="email" id="email" name="email" /> <br />
+
+      <label for="edad">Edad </label> <br />
+      <input type="number" id="edad" name="edad" /> <br />
+
+      <input type="submit" value="Enviar " />
+      <input
+        type="submit"
+        formnovalidate="formnovalidate"
+        value="Enviar sin validar"
+      />
+    </form>
+  </body>
+</html>
+
+<!-- required="true" para campos OBLIGATORIOS, ejemplo
+ es obligatorio colocar el nombre.-->
+<!-- Si no es obligatorio simplemente no colocamos nada.-->
+<!-- method="post" para que no se visualice la informacion
+ en la URL de la pag. -->
+<!-- method por defecto: GET -->
+<!-- step="any" para decimales en los input. -->
