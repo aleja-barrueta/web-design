@@ -8,9 +8,24 @@
   </head>
   <body>
     <h1>Formularios en HTML</h1>
-    <form action="mi_servidor" >
+    <form action="mi_servidor">
       <fieldset>
         <legend>Datos Persona:</legend>
+
+        <legend>Datos Persona:</legend>
+        <label for="idPersona">Id Persona:</label> <br />
+        <input
+          type="text"
+          id="idPersona"
+          name="idPersona"
+          readonly="true"
+          value="100"
+          disabled="true"
+        />
+        <br />
+
+        <input type="hidden" id="sistema" name="sistema" value="SAP" />
+
         <label for="nombre">Nombre:</label> <br />
         <input
           type="text"
@@ -72,6 +87,7 @@ Este es mi comentario
           formnovalidate="formnovalidate"
           value="Enviar sin validar"
         />
+        <input type="reset" value="Restablecer" />
       </fieldset>
     </form>
   </body>
