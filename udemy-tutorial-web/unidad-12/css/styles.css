@@ -1,0 +1,18 @@
+body {
+  /* background-color: #48cae4; */
+  color: white;
+  /* background-image: url("../img/download.jpg"); */
+  /* background-repeat: no-repeat; */
+  /* para posicionar nuestra imagen  */
+  /* background-position: right top; */
+  /* para que nuestra imagen baje o suba con el scroll manteniendose fija */
+  background-attachment: fixed;
+  /* aca vamos a incluir los atributos del background en un solo elemento, excepto el attachment fixed */
+  /* como se puede apreciar son todos los que estan comentados arriba */
+  background: #48cae4 url("../img/download.jpg") no-repeat right top;
+}
+
+h1 {
+  text-align: center;
+  background-color: #ff69b4;
+}
