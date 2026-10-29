@@ -1,0 +1,39 @@
+h1 {
+  text-align: center;
+  color: #590d22;
+  font-size: 35px;
+}
+
+div.contenedor {
+  width: 30%;
+  height: 100px;
+  overflow: auto;
+}
+
+/* float para alinear los div en la misma linea
+float: puede ser usado para la derecha, izquierda, arriba y abajo */
+
+div.contenedor.flotado {
+  float: left;
+}
+
+div.contenedor.flotado.contenedor1 {
+  border: 3px dotted #ff4500;
+}
+
+div.contenedor.flotado.contenedor2 {
+  border: 3px dotted #8b008b;
+  float: right;
+}
+
+div.contenedor.contenedor3 {
+  clear: both;
+  border: 3px dotted #00509d;
+  margin: auto;
+}
+/* tomando en cuenta que arriba ya se habia establecido:
+alto, ancho, y el overflow en el div padre: contenedor */
+/* clear: both; aplica para cuando tenemos elementos flotados a la derecha e izquierda, 
+tambien hay left, right, y otros.*/
+/* margin auto para centrar en nuestra pantalla y overflow para que todo
+el texto quede dentro */

@@ -6,7 +6,6 @@ h1 {
 
 div.contenedor {
   position: relative;
-  border: 3px #f35b04 dashed;
   width: 30%;
   margin: auto;
 }
