@@ -1,0 +1,21 @@
+h1 {
+  text-align: center;
+  color: #e63946;
+}
+
+div.contenedor {
+  width: 80%;
+  height: 20%;
+  margin: auto;
+  border: 3px solid #a8dadc;
+  padding: 15px;
+  color: #457b9d;
+}
+
+/* selector descendiente aplica a: hijos, y a elementos de otros elementos */
+/* TODOS LOS ELEMENTOS P QUE SE ENCUENTREN DENTRO DE ESTA CONFIGURACION SE VAN A SELECCIONAR
+Y SE LES VA A MODIFICAR EL BACKGROUND  */
+div.contenedor.descendiente p {
+  background-color: #fdffb6;
+  text-align: center;
+}
