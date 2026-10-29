@@ -1,0 +1,126 @@
+h1 {
+  text-align: center;
+  color: blue;
+}
+
+/* div { */
+/* POSICION RELATIVE: */
+/* position: static; muestra nuestro elemento por default si quitamos o dejamos no se obtiene diferencia*/
+/* position: relative;
+  top: 100px;
+  left: 50px;
+  max-width: 50%;
+  border: 3px solid firebrick;
+  margin: auto;
+} */
+/* COMETARIOS RELATIVE */
+/* top: 100px;
+  left: 50px; valores que indican como queremos mover nuestros elementos de tipo div */
+
+/* la posicion relativa solo afecta al elemento div */
+
+/* POSICION FIXED */
+/* div {
+  position: fixed; */
+/* nuestro elemento div se va a colocar de forma relativa en nuestra pantalla disponible */
+/* top: 0;
+  right: 0;
+  border: 3px solid firebrick;
+} */
+
+/* COMENTARIOS FIXED */
+/* bottom: 0;
+  right: 0; valores que indican como queremos mover nuestros elementos de tipo div */
+/* en este caso el elemento siempre se sostendra abajo, aun con el scroll se ajusta
+segun el tama;o de nuestra pantalla y no se mueve de su posicion */
+
+/* POSICION ABSOLUTA */
+/* div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 3px solid firebrick;
+} */
+
+/* COMENTARIOS ABSOLUTE: USAMOS absolute CUANDO ESTAMOS TRABAJANDO DENTRO DE OTRO ELEMENTO DE TIPO DIV
+ Tenemos un div, y dentro del tipo div podemos utilizar esta posicion absoluta teniendo en cuenta
+ que si es un elemento padre, este sera un elemento tipo hijo, considerando este elemento padre el elemento 
+ mas externo, se posiciona de manera absoluta el elemento mas interno. Cuando el scrol baja, 
+ baja y el elemento se queda arriba en su posicion inicial (no baja con el scroll) y se ajusta a la pantalla.
+ (teniendo las medidas del div arriba: top:0 right:0. considera el document body.)
+ 
+ Si se agrega sin haber agregado otro elemento padre, se toma en cuenta el document body, es decir, 
+ nuestra pagina */
+
+/* EJEMPLO CON PADRE E HIJO */
+/* padre: */
+/* div .absoluto {
+  position: absolute;
+  bottom: 20px;
+  right: 10;
+  border: 3px double firebrick;
+} */
+
+/* hijo: */
+/* div.relativo {
+  width: 300px;
+  height: 200px;
+  position: relative;
+  border: 3px solid cornflowerblue;
+  top: 10px;
+  left: 100px;
+} */
+
+/* Ningun elemento static puede ser modificado con 
+top, left, right o bottom por esa razon SIEMPRE se debe cambiar 
+a otro valor de position Padre es un div, hijo, div dentro de otro div
+a cada uno se le asigna una etiqueta .absoluto es el padre y .relativo es 
+el hijo en este caso*/
+
+/* STICKY */
+/* div {
+  position: sticky;
+  position: -webkit-sticky;
+  border: 3px double firebrick;
+  top: 0;
+} */
+/* se muestra bajando junto con el scroll
+si estamos trabajando con safari: position: -webkit-sticky;
+ sticjky no funciona en INTERNET explorer.
+ CUALQUIER OTRO NAVEGADOR MODERNO SI SOPORTA ESTA POSICION*/
+
+/* EJERCICIO Z INDEX */
+/* nos sirve para mostrar elementos detras o encima de otro
+se le pueden colocar numeros negativos como en el top: -20 
+y en inspect le agregas z-index: mas un valor y te muestra sobre o debajo
+del otro elemento cuando es nro negativo se muestra DEBAJO, le agregamos
+un alto valor al padding y asi podemos observar mejor el cambio.
+CUANDO al z index se le coloca un valor positivo
+se SOBRE PONE sobre los demas elementos. */
+
+div.estatico {
+  position: static;
+  top: 10px;
+  padding: 15px;
+  border: 3px solid greenyellow;
+  background-color: whitesmoke;
+}
+
+div.relativo {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  padding: 10px;
+  border: 3px solid blueviolet;
+  background-color: whitesmoke;
+}
+
+div.absoluto {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 112px;
+  border: solid cornflowerblue;
+  background-color: whitesmoke;
+  z-index: -1;
+}
