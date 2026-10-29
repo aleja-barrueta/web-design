@@ -1,0 +1,52 @@
+h1,
+div,
+p {
+  border: 3px solid blueviolet;
+  text-align: center;
+  color: cornflowerblue;
+  padding: 10px;
+  display: block;
+}
+
+/* h1 {
+  display: none;
+}
+
+p {
+  visibility: hidden;
+} */
+
+/* visibility:hidden(oculto) oculta el contenido pero sigue respetando su espacio en el INSPECT*/
+/* Display: none: OCULTA LOS ELEMENTOS no respeta el espacio en el INSPECT se oculta
+con todo y su espacio*/
+/* display= block uno en cada linea */
+/* display= inline para mostrar todos los block en una sola linea */
+/* su valor por default siempre es BLOCK, podemos aplicarselo o dejarlo sin el, igual se aplica por default. */
+/* la etiqueta span es un elemento tipo= INLINE
+ solo ocupan la cantidad de espacio que necesitan,\
+ no ocupa mas espacio y tampoco se muestran en una nueva linea    */
+/* si deseamos que se muestre en una nueva linea entonces aplicamos la propiedad:BLOCK
+De lo contrario quedara una caja dentro de otra caja. */
+span {
+  display: block;
+  border: 1px solid blue;
+}
+/* observamos que lo que esta dentro de la etiqueta span se encierra en el borde asignado dentro del block */
+
+a {
+  display: block;
+}
+/* observamos que los links ya cada uno ocupa su propia linea completa*/
+/* si queremos que estos elementos no ocupen toda la linea
+entonces podemos agregar estos elementos dentro de un div y entonces
+modificar el ancho de este elemento DIV y asi ponerlos en otra posicion 
+dentro de nuestra pagina */
+
+li {
+  display: inline;
+}
+/* la etiqueta inline es por defecto= block, le asignamos el display == inline
+para que todos se muestren en la misma linea */
+
+/* Cada elemento cuenta con una propiedad display por default pero es IMPORTANTE
+recordar que se puede modificar con el display flex en CSS*/

@@ -1,0 +1,29 @@
+h1 {
+  font-family: cursive;
+  color: #582f0e;
+  text-align: center;
+}
+
+div.contenedor {
+  position: relative;
+  border: 3px #f35b04 dashed;
+  width: 30%;
+  margin: auto;
+}
+img.imagen {
+  width: 100%;
+  opacity: 0.3;
+}
+
+div.centro {
+  position: absolute;
+  top: 50%;
+  /* border: 1px solid #780116;  */
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+}
+
+/* nos apoyamos con el width para centrar en el contenedor externo */
+/* border: 1px solid #780116; solo era para visualizar por que aplicar la propiedad 
+de width al 100% */

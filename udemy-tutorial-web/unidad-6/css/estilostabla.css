@@ -1,0 +1,56 @@
+* {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+table,
+th,
+td {
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  border-radius: 5px 10px;
+  padding: 5px 10px;
+  border-spacing: 5px;
+  font-family: cursive;
+  /* border-collapse: collapse; */
+}
+
+thead {
+  text-align: center;
+  font-size: large;
+  color: rebeccapurple;
+}
+
+table {
+  border: 3px dotted #f1c0e8;
+}
+
+th {
+  background: #fbf8cc;
+}
+
+/* para rellenar el color de mis renglones */
+/* td {
+  background: #f1c0e8;
+  border: 1px solid black;
+} */
+
+caption {
+  color: rebeccapurple;
+  font-family:cursive ;
+  font-size: 45px;
+  text-align: center;
+  line-height: 50px;
+}
+/* vamos a modificar renglones pares */
+tr:nth-child(even) {
+  background-color: #90dbf4 ;
+}
+
+tr:nth-child(odd){
+  background-color:#f1c0e8 ;
+}
+
+/* seleccionar renglones: even= par
+odd= impar 
+en esta ocasion a mi me salio al reves. */

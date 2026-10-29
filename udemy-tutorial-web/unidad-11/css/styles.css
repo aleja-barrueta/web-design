@@ -1,0 +1,72 @@
+h1 {
+  text-align: center;
+  color: blueviolet;
+}
+/* CONTENIDO DE ESTE CSS: BOX MODEL, ANCHO DE ELEMENTOS EN CSS */
+/* todo esto lo podemos ver en INSPECT solo le podemos agregar color al borde*/
+/*elemento div asignarle un ancho con WIDTH ese ancho es UNICAMENTE del contenido*/
+div {
+  padding: 10px 15px 5px 3px;
+  border: 1px solid #457b9d;
+  background-color: #f1faee;
+  margin: 20px;
+  max-width: 300px;
+  box-sizing: border-box;
+  /* width: 300px; */
+  /* outline: 10px dashed #a8dadc; */
+  /* outline-offset: 10px;
+  box-sizing: border-box; */
+}
+
+/* p.interno{
+    margin-left: inherit;
+} */
+
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+/* para saber el ancho total de nuestro elemento hay que sumar: 
+ 1.padding izquierdo y derecho, 2. borde izquierdo y derecho,
+ 3.Ancho de nuestro contenido (WIDTH) 4.Margen tambien si hemos asignado (izquierdo y derecho)
+ en este caso el total es de: 390/*/
+
+/* 
+ ENTRE MARGEN Y BORDE TENEMOS TAMBIEN UN CONCEPTO QUE SE LLAMA
+ OUTLINE, SE ESTABLECE ENTRE EL BORDE Y EL MARGEN */
+/* EL ANCHO DEL OUTLINE NO SE TOMA EN CUENTA PARA LA SUMA TOTAL DE ANCHO Y ALTO DE NUESTRA CAJA */
+/* TODOS LOS ATRIBUTOS DEL BORDER APLICAN EXACTAMENTE IGUAL
+ AL OUTLINE TOMAR EN CUENTA QUE ES ELEMENTO DE SOBRE POSICION, SE COLOCA
+ SOBRE OTROS ELEMENTOS INCLUYENDO MARGIN */
+
+/* outline-offset EL ESPACIO QUE SE APRECIA ENTRE CONCEPTO OUTLINE  Y BORDER 
+ SOLO SE LE AGREGA UN VALOR PARA LOS 4 EXTREMOS, NO SE LE ASIGNA COLOR*/
+/* PADDING TIENE 4 EXTREMOS A LOS QUE SE LES PUEDE ASIGNAR UN VALOR DIFERENTE 
+ A CADA UNO, Y NO LLEVA COLOR, POR DEFECTO NO SE ASIGNA */
+
+/* BOX SIZING: boder-box ESTABLECE UN ANCHO FIJO DE NUESTROS ELEMENTOS
+ sin importar que hayamos agregado un padding a nuestro contenido, el se mantiene en 300px, el 
+ boxsizing incluye en su valor: padding y border, NO MARGIN.
+  se debe colocar entonces: margin: 0px y border 0px y NO debe tener
+  estos atributos activos: outline:,outline-offset:, box-sizing: border-box */
+
+/* DETALLE: Los elementos de tipo DIV de manera automatica
+  le puede agregar un margen, asi que para quitarlo de 
+  nuestros elementos (se coloca automatico por default) entonces
+  colocamos un selector universal con margin 0 y padding 0  */
+
+/* max-width se usa en lugar de width en un div para tener un diseño mas flexible
+  /* en visualizacion de pantalla*/
+/* max-height hace lo mismo. Ambos se pueden asignar valores en px
+  y tambien en %*/
+
+/* margin: auto= centrar contenido tipo
+  div en la pantalla. Esto para INLINE, elemento
+  tipo bloque puede actuar diferente */
+
+/* inherit en el margen div es el elemento padre
+y el parrafo es el emento hijo obliga al hijo a tomar una 
+propiedad del elemento padre  */
+
+/* BORDER COLLAPSE: se fucionan los margenes (se sobre ponen
+uno sobre otro, revisar en INSPECT)  */

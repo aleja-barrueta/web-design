@@ -1,0 +1,47 @@
+h1 {
+  color: #c9184a;
+  border: 10px dotted #ff8fa3;
+  text-align: center;
+}
+/* para hacer botones con links que lleven a una pag. Aca selecciono el link inicial y cuando se visita */
+a:link,
+a:visited {
+  color: black;
+  text-decoration: none;
+  background-color: aqua;
+  padding: 15px 25px;
+  text-align: center;
+  border-radius: 15%;
+  display: inline-block;
+}
+
+/* hover cuando paso el mouse sobre un elemento, active es cuando esta dentro del link */
+a:hover,
+a:active {
+  background-color: #ff69eb;
+}
+
+/* a:visited {
+  color: #ff4d6d;
+  text-decoration: none;
+} */
+/* cuando nos ponemos encima del link  */
+/* a:hover {
+  color: #0096c7;
+  text-decoration: underline;
+}
+a:active {
+  color: #ffd60a;
+  text-decoration: underline;
+} */
+
+h2 {
+  color: black;
+}
+
+.parraf {
+  color: darkmagenta;
+  background-color: antiquewhite;
+  width: fit-content;
+  
+}
