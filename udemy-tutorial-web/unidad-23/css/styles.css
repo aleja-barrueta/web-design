@@ -2,21 +2,31 @@ html {
   height: auto;
   min-height: 100%;
 }
-/* para difuminado lineal */
+/* para difuminado lineal  */
 /* body {
   background: linear-gradient(#dda15e, #bc6c25);
-} */
+}
 
 /* para difuminado desde la derecha (right) */
-/* body {
+body {
   background: linear-gradient(to right, #dda15e, #bc6c25);
   color: #fefae0;
-} */
+}
 
 /* otra figura */
-body{
+/* body{
     background: linear-gradient(#583101, #6f4518, #000000  );
-}
+} */
+
+/* en diagonal */
+/* body{
+  background: linear-gradient(to bottom right, #dda15e, #583101 );
+} */
+/* body {
+  background: linear-gradient(270deg, #dda15e, #583101);
+} */
+
+/* tambien hay radial-gradient (para hacerlo en circulo) */
 
 h1 {
   text-align: center;
@@ -37,6 +47,7 @@ img {
   width: 150px;
   height: 150px;
 }
+
 
 img:hover {
   opacity: 1;
