@@ -1,0 +1,17 @@
+h1 {
+  text-align: center;
+  color: crimson;
+}
+
+div {
+  text-align: center;
+  width: 50%;
+  border: 3px solid firebrick;
+  margin: auto;
+}
+/* margin: auto; al aplicar este valor el espacio que tengamos 
+al lado derecho o izquierdo se vuelve al mismo */
+/* width: 50%; si le coloco 400px(como maximo) no se ajusta al tamano 
+de la pantalla y me refleja una barra de scroll, mietras que
+/* con % se ajusta a la pantalla */
+/* max-width tamano maximo del elemento*/

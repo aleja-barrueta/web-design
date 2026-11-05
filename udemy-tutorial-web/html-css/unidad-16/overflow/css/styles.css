@@ -1,0 +1,21 @@
+h1 {
+  font-family: cursive;
+  color: #582f0e;
+  text-align: center;
+}
+
+div.contenedor {
+  border: 3px #f35b04 dashed;
+  width: 30%;
+  height: 100px;
+  margin: auto;
+  overflow: auto;
+  /* overflow: visible; propiedad por default */
+  /* overflow: hidden; todo lo que se salga de nuestro elemento 
+ div se va a ocultar */
+  /* overflow: scroll; para mostrar todo el contenido pero con el scroll */
+  /* overflow: auto; solo muestra barra lateral y no vertical (dependiendo del tamano de la pantalla) */
+  /* overflow solo se puede utilizar si especificamos un alto de nuestro */
+  /* elemento de tipo DIV */
+  /* tambien se puede utilizar overflow-x y overflow-y. */
+}
