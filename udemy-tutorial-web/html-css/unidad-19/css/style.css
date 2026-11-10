@@ -1,0 +1,51 @@
+h1 {
+  text-align: center;
+  color: #ff006e;
+}
+
+div.contenedor {
+  width: 80%;
+  height: 20%;
+  overflow: auto;
+  margin: auto;
+  border: 3px dashed #ff99c8;
+}
+
+span {
+  font-weight: bolder;
+  font-style: italic;
+  font-size: large;
+  background-color: #a8dadc;
+  border: 1px solid #457b9d;
+  height: 50px;
+  padding: 5px;
+  display: inline-block;
+}
+
+/* span por default es display inline, por eso se cambia a display: inline-block */
+/* si queremos que se aplique en una nueva linea solo para el, asignamos display: block */
+/* util para cuando creamos menu de navegacion */
+
+/* MENU DE NAVEGACION:
+ */
+
+.menu {
+  /* quitamos los puntos de la lista unorder con el valor: NONE */
+  list-style-type: none;
+  text-align: center;
+}
+
+.menu li {
+  display: inline-block;
+  padding: 15px;
+  margin: 20px;
+  background-color: #fcf6bd;
+  border-radius: 5px;
+}
+/* si no se aplica la propiedad de inline-block, los atributos
+ margin y padding no seran tomados en cuenta. y quedaran pegados al H1 */
+
+a {
+  text-decoration: none;
+  color: #4f000b;
+}

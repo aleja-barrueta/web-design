@@ -1,0 +1,73 @@
+:root {
+  --color-principal: white;
+  --color-secundario: #2352ae;
+  --color-bg: #ffe5ec;
+  --color-tittle: #ff006e;
+  --tipografia-tittle: monospace;
+  --tipografia-fs: medium;
+  --tipografia-fw: 400;
+  --tipografia-parrafo:
+    system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: var(--color-bg);
+  box-sizing: border-box;
+  text-align: center;
+  margin: 0;
+}
+
+.grid-container {
+  display: grid;
+  /* Definimos 3 columnas y 3 filas */
+  grid-template-columns: 60px 180px 1fr;
+  grid-template-rows: 80px 1fr 60px;
+
+  /* Dibujamos el mapa visual de las áreas */
+  grid-template-areas:
+    "header header header"
+    "submenu sidebar content"
+    "submenu sidebar footer";
+
+  height: 100vh;
+}
+
+.header {
+  grid-area: header;
+  border: 3px solid var(--color-principal);
+  color: var(--color-tittle);
+  font-family: var(--tipografia-tittle);
+}
+
+.sidebar {
+  grid-area: sidebar;
+  border: 3px solid var(--color-principal);
+}
+
+h3,
+label {
+  color: var(--color-tittle);
+  font-family: var(--tipografia-tittle);
+  font-weight: var(--tipografia-fw);
+  font-size: var(--tipografia-fs);
+}
+
+.sub-menu {
+  grid-area: submenu;
+  border: 3px solid var(--color-principal);
+  color: var(--color-tittle);
+  font-family: var(--tipografia-tittle);
+  font-weight: var(--tipografia-fw);
+}
+
+.content {
+  grid-area: content;
+  border: 3px solid var(--color-principal);
+  color: var(--color-tittle);
+  font-family: var(--tipografia-tittle);
+}
+
+.footer {
+  grid-area: footer;
+  border: 3px solid var(--color-principal);
+  color: var(--color-tittle);
+  font-family: var(--tipografia-tittle);
+}

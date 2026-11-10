@@ -1,0 +1,50 @@
+h1 {
+  text-align: center;
+  text-shadow: 2px 2px 2px #a8dadc;
+  color: #e63046;
+}
+
+div.contenedor {
+  display: flex;
+  background-color: #560bad;
+  /* flex-direction: column-reverse; */
+  /* flex-direction: row; */
+  /* flex-direction: row-reverse; */
+  /* flex-wrap: wrap; */
+  /* aplicar las dos propiedades en una sola linea */
+  flex-flow: row wrap;
+  /* para cargar de lado izquierdo: flex start: (start=INICIO)*/
+  /* justify-content: flex-start ; */
+  /* Para centrarlo */
+  justify-content: center;
+  /* Para cargar a la derecha*/
+  /* justify-content: flex-end; */
+  /* Para colocar espacio igual entre ellos*/
+  /* justify-content: space-between; */
+  /* para agregar espacio del lado izquierdo y del derecho, tipo margen, pero NO es margen */
+  /* justify-content: space-around; */
+  /* espacio igual entre los elementos de lado izquierdo y derecho */
+  /* justify-content: space-evenly; */
+  height: 300px;
+  /* valor por default es STRETCH*/
+  align-items: stretch;
+  /* alinear los elementos hacia la parte superior y no se alarguen las cajas */
+  /* align-items: flex-start; */
+  /* si queremos que se carguen hacia la parte del medio:  */
+  /* align-items: center; */
+  /* todos desde arriba incluyendo el largo del 3, la linea base 
+  pasa por cada uno del medio de los textos */
+  /* align-items: baseline; */
+
+  /* aligne content: espacio entre lineas que tenemos
+  en nuestro flex box */
+  /* align-content: center; */
+}
+
+div.contenedor > p {
+  background-color: #4895ef;
+  color: #f1faee;
+  margin: 20px;
+  padding: 15px;
+  font-size: 1.5em;
+}
