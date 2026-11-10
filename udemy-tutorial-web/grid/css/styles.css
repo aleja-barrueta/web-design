@@ -1,0 +1,48 @@
+* {
+  background-color: beige;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 0;
+}
+
+.grid-container {
+  display: grid;
+  /* Definimos 3 columnas y 3 filas */
+  grid-template-columns: 60px 180px 1fr;
+  grid-template-rows: 80px 1fr 60px;
+
+  /* Dibujamos el mapa visual de las áreas */
+  grid-template-areas:
+    "header header header"
+    "submenu sidebar content"
+    "submenu sidebar footer";
+
+  /* gap: 10px; */
+  height: 100vh;
+}
+
+/* Asignamos los nombres a los elementos hijos */
+.header {
+  grid-area: header;
+  border: 3px solid blue;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  border: 3px solid blue;
+}
+
+.sub-menu {
+  grid-area: submenu;
+  border: 3px solid blue;
+}
+
+.content {
+  grid-area: content;
+  border: 3px solid blue;
+}
+
+.footer {
+  grid-area: footer;
+  border: 3px solid blue;
+}

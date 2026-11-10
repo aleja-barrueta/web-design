@@ -19,4 +19,5 @@ switch (numero) {
     numeroTexto = "Caso no encontrado";
     break;
 }
-console.log(numeroTexto);
+console.log(numeroTexto);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+
