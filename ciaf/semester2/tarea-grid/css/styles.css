@@ -27,11 +27,9 @@
     "submenu sidebar content"
     "submenu sidebar footer";
 
-  /* gap: 10px; */
   height: 100vh;
 }
 
-/* Asignamos los nombres a los elementos hijos */
 .header {
   grid-area: header;
   border: 3px solid var(--color-principal);
