@@ -5,7 +5,7 @@
 const autos = ["BMW", "Mercedes Benz", "Volvo"];
 //console.log(autos);
 
-//como recorrer un arreglo
+//como correr un arreglo
 console.log(autos[1]);
 console.log(autos[2]);
 
@@ -23,15 +23,18 @@ autos.push("Audi");
 console.log(autos);
 
 //agregar elementos a un arreglo, usando el largo del arreglo, se agregara al final
-console.log(autos.length);
+console.log(autos.length); //retorna la cantidad de elementos del arreglo
 autos[autos.length] = "Cadillac"; //se le cambia el valor
 console.log(autos);
 
-
 //agregar elementos y dejar huecos NO SE DEBE HACER
-autos[6] = "Porshe" //se le cambia el valor
+autos[6] = "Porshe"; //se le cambia el valor
 console.log(autos);
 
 //para llenar ese espacio vacio
-autos[5] = "Mazda" //se le cambia el valor
-console.log('autos :>> ', autos);
+autos[5] = "Mazda"; //se le cambia el valor
+console.log("autos :>> ", autos);
+
+//para preguntar por el tipo
+console.log(Array.isArray(autos));
+console.log(autos instanceof Array);
